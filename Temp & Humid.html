@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>Sutrithip - Home</title>
+<title>Sutrithip - Temp &amp; Humid</title>
 <meta charset="utf-8">
 <style type="text/css">
 
@@ -76,26 +76,26 @@ function MM_goToURL() { //v3.0
         </table></th>
         <th width="82%" align="center" valign="top" scope="col"><table width="100%" border="0" align="center" bgcolor="#66FFFF">
           <tr>
-            <th height="128" valign="top" scope="col"><table width="100%" border="0" bgcolor="#999999">
+            <th height="128" align="center" valign="top" scope="col"><table width="100%" border="0">
               <tr>
-                <th height="30" align="center" valign="middle" scope="col" ><h2>Wellcome to Sutrithip Home<h2></th>
-              </tr>
+                  <th height="30" align="center" valign="middle" bgcolor="#66FF33" scope="col"><h3>Temperature</h3></th>
+                </tr>
             </table>
               <table width="100%" border="0">
                 <tr>
-                  <th scope="col"><table width="100%" border="0">
-  <tr>
-    <th width="50%" bgcolor="#66FF33" scope="col"><h3>Temperature<h3></th>
-    <th width="50%" bgcolor="#66FF33" scope="col"><h3>Humidity<h3></th>
-  </tr>
-</table>
+                  <th align="center" valign="middle" scope="col"><iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/195748/charts/1?bgcolor=%23ffffff&color=%23d62020&days=1&dynamic=true&results=780&timescale=10&type=spline"></iframe>
 </th>
                 </tr>
               </table>
-              <table width="100%" height="64" border="0">
+              <table width="100%" border="0">
                 <tr>
-                  <th align="center" valign="middle" scope="col"><iframe width="200" height="200" style="border: 1px solid #cccccc;" src="https://thingspeak.com/apps/plugins/110100"></iframe></th>
-                  <th scope="col"><iframe width="200" height="200" style="border: 1px solid #cccccc;" src="https://thingspeak.com/apps/plugins/110101"></iframe></th>
+                  <th height="30" align="center" valign="middle" bgcolor="#66FF33" scope="col"><h3>Humidity</h3></th>
+                </tr>
+              </table>
+              <table width="100%" border="0">
+                <tr>
+                  <th align="center" valign="middle" scope="col"><iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/195748/charts/2?bgcolor=%23ffffff&color=%23d62020&days=1&dynamic=true&results=6780&timescale=10&title=Humidity&type=spline"></iframe>
+</th>
                 </tr>
               </table></th>
           </tr>

@@ -35,7 +35,7 @@ function MM_goToURL() { //v3.0
 
 <table border="0" align="center" bgcolor="#E6E6FA">
   <tr>
-    <th bgcolor="#E6E6FA" scope="col" ><img src="image/icon.jpg"></th>
+    <th bgcolor="#E6E6FA" scope="col" ><a href="index.html"><img src="image/icon.jpg"></a></th>
     <th bgcolor="#E6E6FA" scope="col" ><img src="image/Head.jpg"></th>
   </tr>
 </table>
@@ -67,7 +67,7 @@ function MM_goToURL() { //v3.0
             </table></th>
           </tr>
           <tr>
-            <th height="30" align="center" valign="middle" bgcolor="#009933" scope="col"><table width="100%" border="0" onMouseOver="MM_effectAppearFade(this, 1000, 40, 100, false)">
+            <th height="30" align="center" valign="middle" bgcolor="#009933" scope="col"><table width="100%" border="0" onClick="MM_goToURL('parent','Content.html');return document.MM_returnValue" onMouseOver="MM_effectAppearFade(this, 1000, 40, 100, false)">
               <tr>
                 <th scope="col">Content</th>
               </tr>
@@ -78,7 +78,7 @@ function MM_goToURL() { //v3.0
           <tr>
             <th height="128" align="center" valign="top" scope="col"><table width="100%" border="0">
               <tr>
-                  <th height="30" align="center" valign="middle" bgcolor="#66FF33" scope="col"><h3>Temperature</h3></th>
+                  <th height="30" align="center" valign="middle" bgcolor="#66FF33" scope="col"><h2>Temperature</h2></th>
                 </tr>
             </table>
               <table width="100%" border="0">
@@ -90,7 +90,7 @@ function MM_goToURL() { //v3.0
               </table>
               <table width="100%" border="0">
                 <tr>
-                  <th height="30" align="center" valign="middle" bgcolor="#66FF33" scope="col"><h3>Humidity</h3></th>
+                  <th height="30" align="center" valign="middle" bgcolor="#66FF33" scope="col"><h2>Humidity</h2></th>
                 </tr>
               </table>
               <table width="100%" border="0">
@@ -98,6 +98,11 @@ function MM_goToURL() { //v3.0
                   <th align="center" valign="middle" scope="col"><iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/195748/charts/2?bgcolor=%23ffffff&color=%23d62020&days=1&dynamic=true&results=780&timescale=10&title=Humidity&type=spline"></iframe>
 
 </th>
+                </tr>
+              </table>
+              <table width="100%" border="0">
+                <tr>
+                  <th height="10" align="center" valign="middle" bgcolor="#00CCCC" scope="col">Create Website By : Supakij Buasod (086-4293172) || E-mail : first50@windowslive.com</th>
                 </tr>
               </table></th>
           </tr>

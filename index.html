@@ -1,29 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<script>
-//Watch Clock online//
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Sutrithip - Home</title>
 <meta charset="utf-8">
 <style type="text/css">
-
 <!-- Set Center -->
 body 
 	{
@@ -36,11 +17,30 @@ body,td,th {
 	color: #FFF;
 }
 </style>
+<!--For menu Bar-->
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+</script>
+<script>
+//Online Time Clock
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
 }
 </script>
 </head>
 
-<body bgcolor="#E6E6FA" onload="startTime()">
+<body bgcolor="#E6E6FA">
 
 <table border="0" align="center" bgcolor="#E6E6FA">
   <tr>
@@ -85,31 +85,23 @@ body,td,th {
         </table>
           <table width="100%" border="0">
             <tr>
-              <th bgcolor="#E6E6FA" scope="col" ></th>
+              <th width="170" height="10" bgcolor="#E6E6FA" scope="col" ></th>
             </tr>
           </table>
           <table width="100%" border="0">
             <tr>
-              <th align="center" valign="middle" bgcolor="#E6E6FA" scope="col"><div id="demo" style="color:#000"></div><script>
-var myVar = setInterval(myTimer, 1000);
-
-function myTimer() {
-    var d = new Date();
-    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
-}
-</script>
+              <th width="170" height="30" align="center" valign="middle" bgcolor="#E6E6FA" scope="col"><h1 id="demo" style="color:#000"></h1>
 </th>
             </tr>
           </table>
           <table width="100%" border="0">
             <tr>
-              <th align="center" valign="middle" bgcolor="#E6E6FA" scope="col"><iframe src="http://free.timeanddate.com/clock/i5hoqce3/n28/tlth39/fn7/fs20/tct/pct/ftb/tt1/tw0" frameborder="0" width="170" height="30" allowTransparency="false"></iframe>
-</th>
+              <th align="center" valign="middle" bgcolor="#E6E6FA" scope="col"><iframe src="http://free.timeanddate.com/clock/i5hoqce3/n28/tlth39/fn7/fs20/tct/pct/ftb/tt1/tw0" frameborder="0" width="170" height="30" allowTransparency="false"></iframe></th>
             </tr>
           </table>
           <table width="100%" border="0">
             <tr>
-              <th align="left" valign="middle" bgcolor="#E6E6FA" scope="col"><iframe src="http://www.ezyradio.net/life/player_life2/violet.html" frameborder="0" width="170" scrolling="no" height="100" allowtransparency="false"></iframe><br /></th>
+              <th align="left" valign="middle" bgcolor="#E6E6FA" scope="col"><iframe src="http://www.ezyradio.net/life/player_life2/violet.html" frameborder="0" width="170" scrolling="no" height="100" allowtransparency="false"></iframe>                <br /></th>
             </tr>
           </table></th>
         <th width="82%" align="center" valign="top" scope="col"><table width="100%" border="0" align="center" bgcolor="#66FFFF">
